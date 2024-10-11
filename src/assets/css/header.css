@@ -1,0 +1,31 @@
+header{
+    margin: 45px 100px 45px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 70px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.nav{
+    text-decoration: none;
+}
+
+
+.nav{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: right;
+    color: black;
+}

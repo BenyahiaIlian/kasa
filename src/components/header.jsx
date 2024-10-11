@@ -1,11 +1,18 @@
 import React from 'react';
-import LOGO from "./assets/images/LOGO.png";
+import { Link } from 'react-router-dom';
+import LOGO from "../assets/img/LOGO.png";
+import '../assets/css/header.css'
 
-const header = ({title}) => {
+const header = () => {
     return (
         <header>
-            <p>{title}</p>
-            <source />
+            <div className="logo">
+                <img src={LOGO} alt="Logo Kasa" />
+            </div>
+            <nav>
+                <Link to="nav">Accueil</Link>
+                <Link to="nav">A propos</Link>
+            </nav>
         </header>
     );
 };

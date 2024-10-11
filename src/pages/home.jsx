@@ -1,11 +1,14 @@
 import React from 'react';
-
-const home = () => {
+import Card from '../components/card';
+import data from '../datas/logement.json'
+const Home = () => {
     return (
-        <div>
-       <h1>Home</h1>
+        <div className="gallery">
+            {data.map((logement) =>(
+                <Card key={logement.id} logement = {logement}/>
+            ) )}
         </div>
     );
 };
 
-export default home;
+export default Home;
